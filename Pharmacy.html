@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pharmacy Store</title>
+    <link rel="stylesheet" href="Pharmacy.css">
+</head>
+<body>
+    <header>
+        <a href="index.html"><img id="logo" src="images/Logo.jpg" alt="Hospital Logo" width="150"></a>
+        <nav>
+            <input type="checkbox" id="menu-toggle">
+            <label for="menu-toggle" class="menu-icon">&#9776;</label>
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ABOUT US.HTML">About Us</a></li>
+                <li><a href="SERVICES.HTML">Services</a></li>
+                <li><a href="DOCTORS.HTML">Doctors</a></li>
+                <li><a href="RESERVATION.HTML">Consultation</a></li>
+                <li><a href="Pharmacy.html">Pharmacy</a></li>
+                <li><a href="SERVICES DETAILS.HTML">Services Details</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="secondary-nav">
+        <a href="#analgesics">Analgesics</a>
+        <a href="#antibiotics">Antibiotics</a>
+        <a href="#antidepressants">Antidepressants</a>
+        <a href="#antihistamines">Antihistamines</a>
+        <a href="#antihypertensives">Antihypertensives</a>
+      </div>
+
+    <div id="medicines-container" class="container">
+        <!-- Medicines will be dynamically rendered from json file -->
+    </div>
+
+    <!-- Buttons for Cart and Favorites -->
+    <div id="cart-actions">
+        
+        <button id="save-favorites">Save to Favorites</button>
+        <button id="load-favorites">Apply Favorites</button>
+    </div>
+
+    
+    <div id="cart-section">
+        <h2>Cart</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>Medicine</th>
+                    <th>Quantity</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody id="cart-body">
+                <!-- Dynamic add content  -->
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td colspan="2">Total</td>
+                    <td id="cart-total">$0.00</td>
+                </tr>
+            </tfoot>
+        </table>
+        <button id="checkout-button">Go to Checkout</button>
+    </div>
+
+    <script>
+        const jsonPath = "medicine.json";
+
+        // Function to render a medicine item
+        function renderMedicineItem(medicine) {
+            return `
+                <div class="medicine-item">
+                    <img src="${medicine.image}" alt="${medicine.name}">
+                    <h3>${medicine.name}</h3>
+                    <p>Price: $${medicine.price.toFixed(2)}</p>
+                    <input type="number" id="${medicine.id}" value="0" min="0" data-price="${medicine.price.toFixed(2)}">
+                    <button data-action="add-to-cart">Add to Cart</button>
+                </div>
+            `;
+        }
+
+        // Function to render a category
+        function renderCategory(category) {
+            const medicinesHTML = category.medicines.map(renderMedicineItem).join("");
+            return `
+                <div id="${category.name.toLowerCase()}" class="section">
+                    <h2>${category.name}</h2>
+                    <div class="medicine-list">
+                        ${medicinesHTML}
+                    </div>
+                </div>
+            `;
+        }
+
+        // Fetch and render medicines
+        fetch(jsonPath)
+            .then(response => response.json())
+            .then(data => {
+                const medicinesContainer = document.getElementById("medicines-container");
+                const categoriesHTML = data.categories.map(renderCategory).join("");
+                medicinesContainer.innerHTML = categoriesHTML;
+            })
+            .catch(error => console.error("Error loading medicines:", error));
+    </script>
+    <script src="Pharmacy.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section about">
+            <h2>About Us</h2>
+            <p>We are committed to providing the best healthcare services with highly qualified doctors, modern equipment, and compassionate patient care.</p>
+        </div>
+        <div class="footer-section links">
+            <h2>Quick Links</h2>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="ABOUT US.HTML">About Us</a></li>
+                <li><a href="SERVICES.HTML">Services</a></li>
+                <li><a href="DOCTORS.HTML">Doctors</a></li>
+                <li><a href="RESERVATION.HTML">Consultation</a></li>
+                <li><a href="Pharmacy.html">Pharmacy</a></li>
+            </ul>
+        </div>
+        <div class="footer-section contact">
+            <h2>Contact Us</h2>
+            <p><strong>Address:</strong> 46/8 Hospital Avenue, Colombo, Sri Lanka</p>
+            <p><strong>Email:</strong> info@hospital.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <p>&copy; 2024 Hospital Name. All rights reserved.</p>
+    </div>
+</footer>
+</html>

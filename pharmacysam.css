@@ -1,0 +1,413 @@
+/* Base Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background-color: #cde6f7;
+  color: #333;
+}
+
+header {
+  max-width: 100%;
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+header .logo img {
+  width: 100%;
+}
+
+nav {
+  position: relative;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap;
+}
+
+nav ul li {
+  position: relative;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bold;
+  padding: 5px 10px;
+  color: #fff;
+}
+
+nav ul li a:hover {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+nav ul li a:focus {
+  background-color: #0056b3;
+  border-radius: 4px;
+}
+
+/* Hamburger Menu Icon */
+.menu-icon {
+  display: none; /* Hide on larger screens */
+  font-size: 30px;
+  cursor: pointer;
+  padding: 10px;
+  color: #fff;
+}
+
+/* Hide the checkbox (used for toggling the menu) */
+#menu-toggle {
+  display: none; /* Hidden but functional */
+}
+
+/* Regular menu on large screens */
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+/* Hover effect for links */
+nav a:hover {
+  color: white;
+}
+header {
+  background-color: #0074d9;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+nav {
+  background-color: #005f99;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+nav a:hover {
+  text-decoration: underline;
+}
+/* Default styling for second navbar */
+.secondary-nav {
+  background-color: #005f99;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.secondary-nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-weight: bold;
+}
+
+.secondary-nav a:hover {
+  text-decoration: underline;
+}
+
+
+.container {
+  max-width: 1200px;
+  margin: auto;
+  padding: 10px;
+}
+.section {
+  margin-bottom: 30px;
+}
+.section h2 {
+  margin-bottom: 20px;
+  border-bottom: 2px solid #0074d9;
+  padding-bottom: 5px;
+  color: #333;
+}
+.medicine-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+.medicine-item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(33.333% - 20px);
+  padding: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.medicine-item img {
+  max-width: 300px;
+  height: 300px;
+  margin-bottom: 10px;
+}
+.medicine-item h3 {
+  font-size: 1.2em;
+  margin: 10px 0;
+}
+.medicine-item p {
+  color: #555;
+  margin-bottom: 10px;
+}
+.medicine-item button {
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  margin-bottom: 5px;
+  padding: 10px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+.medicine-item button:hover {
+  background-color: #005f99;
+}
+label, select, input {
+  display: block;
+  margin: 10px 80px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+table, th, td {
+  border: 1px solid #000000;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+}
+button {
+  padding: 10px 20px;
+  background-color: #0074d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  margin-top: 75px;
+  margin-bottom: 75px;
+  margin-right: 50px;
+  cursor: pointer;
+}
+button:hover {
+  background-color: #005f99;
+}
+/* Footer Styles */
+footer {
+background-color: #003366;
+color: white;
+padding: 40px 20px;
+margin-top: 50px;
+}
+
+.footer-container {
+display: flex;
+justify-content: space-between;
+flex-wrap: wrap;
+gap: 20px;
+max-width: 1200px;
+margin: 0 auto;
+}
+
+.footer-section {
+flex: 1;
+min-width: 250px;
+margin-bottom: 20px;
+}
+
+.footer-section h2 {
+font-size: 1.5rem;
+margin-bottom: 10px;
+}
+
+.footer-section p,
+.footer-section ul {
+font-size: 1rem;
+line-height: 1.6;
+}
+
+.footer-section ul {
+list-style: none;
+padding: 0;
+}
+
+.footer-section ul li {
+margin-bottom: 10px;
+}
+
+.footer-section ul li a {
+color: white;
+text-decoration: none;
+transition: color 0.3s ease;
+}
+
+.footer-section ul li a:hover {
+color: #ffcc00;
+}
+
+.footer-section .social-links {
+display: flex;
+gap: 10px;
+}
+
+.footer-section .social-links a img {
+width: 30px;
+height: 30px;
+}
+
+.footer-bottom {
+text-align: center;
+padding: 20px;
+background-color: #002244;
+font-size: 1rem;
+}
+
+/* Responsive Styles with Adjustments */
+
+/* Base Styles (Keep these as is) */
+/* ... (retain your base styles here) ... */
+
+/* Responsive Media Queries */
+
+/* For tablets and devices with a max-width of 768px */
+@media (max-width: 768px) {
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .menu-icon {
+    display: block; /* Show hamburger menu on smaller screens */
+  }
+
+  nav ul {
+    display: none; /* Hide the menu by default */
+    flex-direction: column;
+    position: absolute;
+    top: 50px;
+    left: 0;
+    background-color: #007bff;
+    width: 100%;
+    z-index: 10; /* Ensure the menu appears above other elements */
+  }
+
+  nav ul li {
+    text-align: center;
+  }
+    .secondary-nav {
+      flex-direction: column; /* Stack links vertically */
+      align-items: center;   /* Center align the links */
+  }
+
+  .secondary-nav a {
+      margin: 5px 0; /* Adjust spacing between links */
+  }
+
+  #menu-toggle:checked + nav ul {
+    display: flex; /* Show menu when toggle is checked */
+  }
+
+  .medicine-list {
+    flex-direction: column; /* Stack items vertically */
+  }
+
+  .medicine-item {
+    width: 100%; /* Full width on smaller screens */
+  }
+
+  footer .footer-container {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* For mobile devices with a max-width of 480px */
+@media (max-width: 480px) {
+  header {
+    padding: 10px;
+  }
+
+  .menu {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav ul {
+    gap: 10px;
+  }
+  .secondary-nav {
+    padding: 8px; /* Reduce padding for smaller screens */
+  }
+
+  .secondary-nav a {
+    font-size: 0.9rem; /* Adjust font size for small screens */
+  }
+
+  .medicine-list {
+    flex-direction: column; /* Ensure medicines stack vertically */
+    gap: 15px; /* Provide spacing between items */
+  }
+
+  .medicine-item {
+    width: 100%; /* Full width for each item */
+    padding: 10px; /* Adjust padding for smaller screens */
+  }
+
+  .footer-container {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-section {
+    text-align: center;
+    padding: 10px;
+  }
+
+  table, th, td {
+    font-size: 0.85rem; /* Adjust font size for small screens */
+  }
+
+  button {
+    padding: 8px 15px; /* Smaller buttons on smaller screens */
+    font-size: 0.9rem;
+  }
+}
+
+/* For large screens above 1024px */
+@media (min-width: 1025px) {
+  .container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 20px;
+  }
+
+  .medicine-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+
+  .medicine-item {
+    width: calc(33.333% - 20px); /* Three items per row */
+  }
+
+  .footer-container {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout - Pharmacy Store</title>
+    <link rel="stylesheet" href="checkout.css">
+<body>
+    <header>
+        <h1>Checkout - Pharmacy Store</h1>
+    </header>
+    <div class="container">
+        <!-- Cart Summary -->
+        <section id="cart-summary">
+            <h2>Your Cart</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Medicine</th>
+                        <th>Quantity</th>
+                        <th>Price</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-body">
+                    
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td colspan="2">Total</td>
+                        <td id="cart-total">$0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+
+        <!-- Checkout Form -->
+        <section id="checkout-form">
+            <h2>Shipping & Payment</h2>
+            <form id="order-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email Address</label>
+                    <input type="email" id="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="address">Shipping Address</label>
+                    <textarea id="address" rows="3" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="payment-method">Payment Method</label>
+                    <select id="payment-method" required>
+                        <option value="credit-card">Credit Card</option>
+                        <option value="cash">Cash on Delivery</option>
+                    </select>
+                </div>
+                
+                <h2>Payment Details</h2>
+                <div class="payment-details">
+                    <div class="form-group">
+                        <label for="card-number">Card Number</label>
+                        <input type="text" id="card-number" placeholder="XXXX-XXXX-XXXX-XXXX" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="expiry-date">Expiry Date</label>
+                        <input type="text" id="expiry-date" placeholder="MM/YY" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="cvv">CVV</label>
+                        <input type="text" id="cvv" placeholder="123" required>
+                    </div>
+                </div>
+                </div>
+                <button type="submit">Complete Payment</button>
+            </form>
+        </section>
+
+       <!-- Success after the Payment Message -->
+        <div id="success-message" class="success-message">
+            <h3>Thank you for your purchase!</h3>
+            <p>Your order has been placed successfully. It will be delivered within 3-5 business days.</p>
+        </div>
+
+    </div>
+    <script src="checkout.js"></script>
+</body>
+</html>

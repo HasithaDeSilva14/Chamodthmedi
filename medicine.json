@@ -1,0 +1,198 @@
+{
+    "categories": [
+      {
+        "name": "Analgesics",
+        "medicines": [
+          {
+            "id": "paracetamol",
+            "name": "Paracetamol",
+            "price": 2.00,
+            "image": "images/paracetamol.webp"
+          },
+          {
+            "id": "ibuprofen",
+            "name": "Ibuprofen",
+            "price": 5.25,
+            "image": "images/Ibuprofeno_.webp"
+          },
+          {
+            "id": "aspirin",
+            "name": "Aspirin",
+            "price": 6.50,
+            "image": "images/aspirin.webp"
+          },
+          {
+            "id": "naproxen",
+            "name": "Naproxen",
+            "price": 4.00,
+            "image": "images/naproxen.webp"
+          },
+          {
+            "id": "codeine",
+            "name": "Codeine",
+            "price": 5.00,
+            "image": "images/Codeine.webp"
+          },
+          {
+            "id": "diclofenac",
+            "name": "Diclofenac",
+            "price": 5.00,
+            "image": "images/Diclofenaco.webp"
+          }
+        ]
+      },
+      {
+        "name": "Antibiotics",
+        "medicines": [
+          {
+            "id": "amoxicillin",
+            "name": "Amoxicillin",
+            "price": 5.50,
+            "image": "images/Amoxicillin.webp"
+          },
+          {
+            "id": "ciprofloxacin",
+            "name": "Ciprofloxacin",
+            "price": 11.00,
+            "image": "images/ciprofloxacin.webp"
+          },
+          {
+            "id": "azithromycin",
+            "name": "Azithromycin",
+            "price": 12.00,
+            "image": "images/Azithromycin.webp"
+          },
+          {
+            "id": "clindamycin",
+            "name": "Clindamycin",
+            "price": 9.25,
+            "image": "images/Clindamycin.webp"
+          },
+          {
+            "id": "doxycycline",
+            "name": "Doxycycline",
+            "price": 10.00,
+            "image": "images/Doxycycline.webp"
+          },
+          {
+            "id": "metronidazole",
+            "name": "Metronidazole",
+            "price": 10.50,
+            "image": "images/metronidazol.webp"
+          }
+        ]
+      },
+      {
+        "name": "Antidepressants",
+        "medicines": [
+          {
+            "id": "sertraline",
+            "name": "Sertraline",
+            "price": 15.00,
+            "image": "images/Sertraline.webp"
+          },
+          {
+            "id": "fluoxetine",
+            "name": "Fluoxetine",
+            "price": 12.99,
+            "image": "images/Fluoxetine (1).webp"
+          },
+          {
+            "id": "venlafaxine",
+            "name": "Venlafaxine",
+            "price": 15.00,
+            "image": "images/Venlafaxine-1.jpg"
+          },
+          {
+            "id": "duloxetine",
+            "name": "Duloxetine",
+            "price": 8.00,
+            "image": "images/duloxetine.webp"
+          },
+          {
+            "id": "bupropion",
+            "name": "Bupropion",
+            "price": 12.00,
+            "image": "images/Bupropion.webp"
+          },
+          {
+            "id": "amitriptyline",
+            "name": "Amitriptyline",
+            "price": 18.00,
+            "image": "images/Amitriptyline.webp"
+          }
+        ]
+      },
+      {
+        "name": "Antihistamines",
+        "medicines": [
+          {
+            "id": "diphenhydramine",
+            "name": "Diphenhydramine",
+            "price": 3.50,
+            "image": "images/Diphenhydramine2.webp"
+          },
+          {
+            "id": "loratadine",
+            "name": "Loratadine",
+            "price": 6.00,
+            "image": "images/Loratadine.webp"
+          },
+          {
+            "id": "chlorpheniramine",
+            "name": "Chlorpheniramine",
+            "price": 3.00,
+            "image": "images/Chlorpheniramine.webp"
+          },
+          {
+            "id": "ranitidine",
+            "name": "Ranitidine",
+            "price": 3.00,
+            "image": "images/ranitidine_u.webp"
+          }
+        ]
+      },
+      {
+        "name": "Antihypertensives",
+        "medicines": [
+          {
+            "id": "amlodipine",
+            "name": "Amlodipine",
+            "price": 8.00,
+            "image": "images/Amlodipine.webp"
+          },
+          {
+            "id": "losartan",
+            "name": "Losartan",
+            "price": 3.00,
+            "image": "images/losartan.webp"
+          },
+          {
+            "id": "enalapril",
+            "name": "Enalapril",
+            "price": 2.00,
+            "image": "images/Enalapril.webp"
+          },
+          {
+            "id": "metoprolol",
+            "name": "Metoprolol",
+            "price": 4.00,
+            "image": "images/Metoprolol.webp"
+          },
+          {
+            "id": "atenolol",
+            "name": "Atenolol",
+            "price": 7.20,
+            "image": "images/Atenolol.webp"
+          },
+          {
+            "id": "lisinopril",
+            "name": "Lisinopril",
+            "price": 9.00,
+            "image": "images/Lisinopril.webp"
+          }
+        ]
+      }
+    ]
+  }
+  
